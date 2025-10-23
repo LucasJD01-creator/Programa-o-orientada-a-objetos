@@ -5,13 +5,13 @@ public class Molde_Grampeador {
     //Quando quero alterar algum atributo da propria classe, utilizo this.AquiAPropriedade
 
     //atributos
-    String modelo;
-    String cor;
-    int carga;
+   public String modelo;
+    public String cor;
+    private int carga;
 
 
     //metodos
-    void grampear(){
+   public void grampear(){
         if(this.carga <= 0){
             System.out.println("Não é possível grampear as folhas");
         }
@@ -23,7 +23,7 @@ public class Molde_Grampeador {
         }
     }
 
-    void carregar(int quantidadeCarga){
+   private void carregar(int quantidadeCarga){
         this.carga = quantidadeCarga;
         System.out.println("Carregando ");
         System.out.println("Carga atual é de 10 grampos ");
@@ -31,7 +31,7 @@ public class Molde_Grampeador {
     }
 
     //metodo para mostrar o estado do objeto
-    void status() {
+   public void status() {
         System.out.println("Um grampeador " + this.cor);
         if (this.carga <= 0) {
             System.out.println("O grampeador esta sem grampos");
