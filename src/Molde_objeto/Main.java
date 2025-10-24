@@ -11,13 +11,13 @@ public class Main {
         //adicionando as propriedades/ ATRIBUTOS
         grampeadorPreto.modelo = "Gramper";
         grampeadorPreto.cor = "Preto";
-        grampeadorPreto.carga = 10;
+        grampeadorPreto.trocar_carga = 0;
+
 
         //exibindo status // METODOS
         grampeadorPreto.status();
 
         //mudando o estado e exibindo novamente // Atributo + Metodo
-        grampeadorPreto.carga = 5;
         grampeadorPreto.status();
 
         grampeadorPreto.grampear();
@@ -26,7 +26,12 @@ public class Main {
         grampeadorPreto.grampear();
         grampeadorPreto.grampear();
         grampeadorPreto.grampear();
-        grampeadorPreto.carregar(10);
+        grampeadorPreto.grampear();
+        grampeadorPreto.grampear();
+        grampeadorPreto.grampear();
+        grampeadorPreto.grampear();
+        grampeadorPreto.grampear();
+        grampeadorPreto.trocar_carga(10);
 
     }
 }

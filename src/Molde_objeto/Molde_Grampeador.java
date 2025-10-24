@@ -7,7 +7,8 @@ public class Molde_Grampeador {
     //atributos
    public String modelo;
     public String cor;
-    private int carga;
+    private int carga = 10;
+    public int trocar_carga;
 
 
     //metodos
@@ -21,6 +22,13 @@ public class Molde_Grampeador {
             this.carga = this.carga - 1;
             System.out.println("Carga atual do grampeador após o uso é: " + this.carga);
         }
+    }
+
+    public void trocar_carga(int carga){
+       this.trocar_carga = carga;
+        System.out.println("Carregando ");
+        System.out.println("Carga atual é de 10 grampos ");
+        System.out.println("Pronto para grampear novamente ");
     }
 
    private void carregar(int quantidadeCarga){
