@@ -11,7 +11,7 @@ public class Main {
         //adicionando as propriedades/ ATRIBUTOS
         grampeadorPreto.modelo = "Gramper";
         grampeadorPreto.cor = "Preto";
-        grampeadorPreto.trocar_carga = 0;
+        grampeadorPreto.trocar_carga(10);
 
 
         //exibindo status // METODOS

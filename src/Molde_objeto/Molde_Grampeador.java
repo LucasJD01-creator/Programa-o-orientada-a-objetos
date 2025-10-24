@@ -8,7 +8,6 @@ public class Molde_Grampeador {
    public String modelo;
     public String cor;
     private int carga = 10;
-    public int trocar_carga;
 
 
     //metodos
@@ -24,8 +23,8 @@ public class Molde_Grampeador {
         }
     }
 
-    public void trocar_carga(int carga){
-       this.trocar_carga = carga;
+    public void trocar_carga(int Nova_carga){
+       this.carga = Nova_carga;
         System.out.println("Carregando ");
         System.out.println("Carga atual é de 10 grampos ");
         System.out.println("Pronto para grampear novamente ");
